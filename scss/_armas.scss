@@ -1,0 +1,32 @@
+.carousel-item img{
+   
+    height: 280px;
+    object-fit: cover;
+}
+
+.section--arma{
+    margin: 30px auto;
+   
+}
+
+.contenedor-carrusel-tabla{
+    gap: 60px;
+    
+    
+}
+
+.section--arma{
+    display: flex;
+    column-gap: 60px;
+    justify-content: center;
+}
+@media (min-width:768px){
+    .contenedor-carrusel-tabla{
+        flex-direction: row;
+    }
+    
+}
+
+.table{
+    width: 50%;
+}

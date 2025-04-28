@@ -8,44 +8,74 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
     />
 
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../scss/main.css" />
     <title>Armas</title>
   </head>
+
+
   <body id="body">
+
     <header id="header" class="header">
-      <nav id="navbar" class="header--nav">
-        <ul class="header--nav__ul">
-          <li><a href="../index.html">inicio</a></li>
-          <li><a href="resonadores.html">Resonadores</a></li>
-          <li><a href="ecos.html">Ecos</a></li>
-          <li><a href="#">Armas</a></li>
-          <li><a href="elementos.html">Elementos</a></li>
-        </ul>
+      <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark header--nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"> 
+            <img src="../images/logowuwa.png" alt="Logo" style="height: 40px;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse header--nav__ul" id="navbarResponsive">
+            <ul class="navbar-nav mx-auto text-center">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="resonadores.html">Resonadores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ecos.html">Ecos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Armas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="elementos.html">Elementos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
-    </header>
+      
+      </header>
+      
 
     <main id="main">
-      <img
-        src="../images\wuwabanner.jpg"
+      <div class="container text-center">
+        <img
+        src="../images/wuwabanner.jpg"
         alt="wuwabanner"
-        style="width: 750px"
+        class="img-fluid mx-auto d-block fade-in"
+        style="max-width: 100%; height: auto;"
       />
+      
       <h1>ARMAS</h1>
       <section class="section--arma">
+        <div class="d-flex flex-column flex-md-row align-items-center contenedor-carrusel-tabla">
+        <div class="fade-in">
         <div id="carouselExample" class="carousel slide" style="width: 500px">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="../images\arma1.jpg" class="d-block w-100" alt="..." />
+              <img src="../images/arma1.jpg" class="d-block w-100" alt="..." />
             </div>
             <div class="carousel-item">
-              <img src="../images\arma2.jpg" class="d-block w-100" alt="..." />
+              <img src="../images/arma2.jpg" class="d-block w-100" alt="..." />
             </div>
             <div class="carousel-item">
-              <img src="../images\arma3.jpg" class="d-block w-100" alt="..." />
+              <img src="../images/arma3.jpg" class="d-block w-100" alt="..." />
             </div>
             <div class="carousel-item">
               <img
-                src="../images\arma4.jpg"
+                src="../images/arma4.jpg"
                 class="d-block w-100"
                 alt="..."
                 style="width: 100px"
@@ -71,9 +101,9 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
+        </div>
 
-
-
+          <div class="fade-in">
         <table class="table">
             <thead>
               <tr>
@@ -123,6 +153,8 @@
                     </tr>
             </tbody>
           </table>
+          </div>
+        </div>
       </section>
 
 
@@ -131,6 +163,8 @@
         impedit accusantium iste sunt harum excepturi illo vero doloribus fugit
         quos dolorum dolorem! Veritatis totam nemo quam placeat id eaque?
       </p>
+
+      </div>
     </main>
 
     <footer id="footer">
@@ -155,12 +189,20 @@
       </section>
       <section class="box2">
         <img
-          src="../images\kurogames.png"
+          src="../images/kurogames.png"
           alt="kurogames"
           style="width: 250px"
         />
       </section>
     </footer>
+
+
+
+    <script type="module">
+      import { animarAlScroll } from './js/animaciones.js';
+    
+      animarAlScroll();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

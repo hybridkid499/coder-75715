@@ -8,27 +8,53 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
     />
 
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../scss/main.css" />
     <title>Elementos</title>
   </head>
+
   <body id="body">
+
+
     <header id="header" class="header">
-      <nav id="navbar" class="header--nav">
-        <ul class="header--nav__ul">
-          <li><a href="../index.html">inicio</a></li>
-          <li><a href="resonadores.html">Resonadores</a></li>
-          <li><a href="ecos.html">Ecos</a></li>
-          <li><a href="armas.html">Armas</a></li>
-          <li><a href="#">Elementos</a></li>
-        </ul>
+      <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark header--nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"> 
+            <img src="../images/logowuwa.png" alt="Logo" style="height: 40px;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse header--nav__ul" id="navbarResponsive">
+            <ul class="navbar-nav mx-auto text-center">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="resonadores.html">Resonadores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ecos.html">Ecos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="armas.html">Armas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Elementos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
-    </header>
+      
+      </header>
 
     <main id="main">
-      <img
-        src="../images\wuwabanner.jpg"
+      <div class="container text-center">
+        <img
+        src="../images/wuwabanner.jpg"
         alt="wuwabanner"
-        style="width: 750px"
+        class="img-fluid mx-auto d-block fade-in"
+        style="max-width: 100%; height: auto;"
       />
       <h1>ELEMENTOS</h1>
 
@@ -36,9 +62,10 @@
     
 
 
-      <div class="container mt-5">
+      <div class="container mt-5 fade-in">
         <div class="accordion" id="accordionExample">
-          <!-- Primera pestaña -->
+          
+
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -52,7 +79,7 @@
             </div>
           </div>
       
-          <!-- Segunda pestaña -->
+          
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingTwo">
               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
@@ -66,7 +93,7 @@
             </div>
           </div>
       
-          <!-- Tercera pestaña -->
+          
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingThree">
               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
@@ -79,6 +106,7 @@
               </div>
             </div>
           </div>
+
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingFour">
               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
@@ -91,6 +119,7 @@
               </div>
             </div>
           </div>
+
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingFive">
               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
@@ -117,7 +146,7 @@
           </div>
         </div>
       </div>
-
+      </div>
 
     </main>
 
@@ -143,7 +172,7 @@
       </section>
       <section class="box2">
         <img
-          src="../images\kurogames.png"
+          src="../images/kurogames.png"
           alt="kurogames"
           style="width: 250px"
         />
