@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="Descubre los resonadores jugables en Wuthering Waves, su rareza, armas y elementos." />
+      <meta name="keywords" content="Wuthering Waves, resonadores, Changli, Camellya, Shorekeeper, personajes jugables, Fusión, Espectro, destrucción, espada, rectificador, rareza, estrellas" />
 
 
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
-
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+/>
 
     <link rel="stylesheet" href="../scss/main.css">
     <title>Resonadores</title>
@@ -27,7 +32,7 @@
                   <a class="nav-link" href="../index.html">inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Resonadores</a>
+                  <a class="nav-link active" href="#">Resonadores</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="ecos.html">Ecos</a>
@@ -54,11 +59,14 @@
             <img
             src="../images/wuwabanner.jpg"
             alt="wuwabanner"
-            class="img-fluid mx-auto d-block fade-in"
+            class="img-fluid mx-auto d-block slide-from-left-fade-in"
             style="max-width: 100%; height: auto;"
           />
         <h1>RESONADORES</h1>
 <br>
+
+   <div class="container my-5">
+
          <p>Los resonadores son los personajes jugables que se pueden obtener en wuthering waves.
 
             Dentro del mundo, son individuos que tienen la capacidad de resonar con ciertos objetos. Se los puede identificar por la Marca Tácita que se encuentra en su cuerpo.
@@ -72,7 +80,7 @@
                 <li>Elemento: Fusión</li>
                 <li>Arma: Espada</li>
             </ul> 
-            <img src="../images/changli-1.jpg" alt="changli" style="width: 800px;"> 
+            <img src="../images/changli-1.jpg" alt="changli" class="img-fluid scale-up"> 
          </section>
        <br><br><br><br>
 
@@ -83,7 +91,7 @@
                 <li>Elemento: destrucción</li>
                 <li>Arma: Espada</li>
             </ul> 
-            <img src="../images/camellya.jpg" alt="camellya" style="width: 800px;">
+            <img src="../images/camellya.jpg" alt="camellya" class="img-fluid scale-up">
          </section>
          
          <br><br><br><br>
@@ -94,35 +102,54 @@
                 <li>Elemento: espectro</li>
                 <li>Arma: rectificador</li>
             </ul> 
-             <img src="../images/shorekeeper.jpg" alt="shorekeeper" style="width: 800px;">
+             <img src="../images/shorekeeper.jpg" alt="shorekeeper" class="img-fluid scale-up">
 
          </section>
-
+   </div>
 
         </div>
 
     </main>
 
-    <footer id="footer">
-        <section class="footerMenu">
-             
-                <u1>
-                    <li>Redes Oficiales de Wuthering Waves:</li>
-                <li><a href="https://wutheringwaves.kurogames.com/en/">Pagina Oficial</a></li>
-                <li><a href="https://x.com/Wuthering_Waves">Twitter/X</a></li>
-                <li><a href="https://www.youtube.com/c/WutheringWaves">Youtube</a></li>
-                <li><a href="https://www.instagram.com/wuthering_waves/?hl=es">Instagram</a></li>
-                </u1>
-            
-          
-        </section>
-        <section class="box2">
-                <img src="../images/kurogames.png" alt="kurogames" style="width: 250px;">
-        </section>
-    </footer>
+    <footer id="footer" class="py-4">
+  <section class="footerMenu">
+    <ul class="list-unstyled d-flex flex-column flex-md-row align-items-center justify-content-center gap-2">
+      
+      <li class="d-flex justify-content-center">
+        <a href="https://wutheringwaves.kurogames.com/en/" target="_blank" aria-label="Página oficial">
+          <i class="bi bi-globe2 w-100"></i>
+        </a>
+      </li>
+      <li class="d-flex justify-content-center">
+        <a href="https://x.com/Wuthering_Waves" target="_blank" aria-label="Twitter/X">
+          <i class="bi bi-twitter w-100"></i>
+        </a>
+      </li>
+      <li class="d-flex justify-content-center">
+        <a href="https://www.youtube.com/c/WutheringWaves" target="_blank" aria-label="YouTube">
+          <i class="bi bi-youtube w-100"></i>
+        </a>
+      </li>
+      <li class="d-flex justify-content-center">
+        <a href="https://www.instagram.com/wuthering_waves/?hl=es" target="_blank" aria-label="Instagram">
+          <i class="bi bi-instagram w-100"></i>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="box2">
+    <img src="../images/kurogames.png" alt="kurogames" style="width: 250px" />
+  </section>
+</footer>
 
 
 
+    <script type="module">
+      import { animarAlScroll } from '../js/animaciones.js';
+    
+      animarAlScroll();
+    </script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>

@@ -1,6 +1,6 @@
 // Función para animar al hacer scroll
 export function animarAlScroll() {
-    const animatedElements = document.querySelectorAll('.slide-up');
+    const animatedElements = document.querySelectorAll('.slide-up, .scale-up');
   
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {

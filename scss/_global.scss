@@ -38,6 +38,21 @@ $primary: black;
      
      
  }
+ #navbar .nav-link {
+  color: #fff; 
+}
+
+#navbar .nav-link:hover {
+  color: #ddd; 
+}
+
+#navbar .nav-link.active {
+  color: #ffc107; // Un amarillo dorado visible sobre fondo oscuro
+  font-weight: bold;
+  border-bottom: 2px solid #ffc107; // Línea debajo del link activo
+}
+
+
  
  
  main{
@@ -64,35 +79,44 @@ h3 {
     color: rgb(218, 59, 59);
 }
 
- #footer {
-    
-    width: 100%;
-    background-color: gainsboro;
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-    align-items: center;
-   
-    
-   
+#footer {
+  width: 100%;
+  background-color: gainsboro;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+
+  a {
+    color: black;
+    font-size: 1.5rem;
+
+    &:hover {
+      color: #555;
+    }
+  }
+
+  i {
+    font-size: 1.8rem;
+  }
+
+  .footerMenu ul {
+    padding-left: 0;
+    margin: 0;
+  }
 }
 
-.footerMenu a{
-    
-  color: black;
-    text-decoration: none;
-}
 
 
 
 .header--nav__ul a {
     text-decoration: none;
     display: inline-block;
-    color: black;
+    
     font-size: 30px;
-    border: 1px black solid;
+    border: 1px rgb(160, 156, 156) solid;
 }
 .header--nav__ul a:hover{
-    color: darkblue;
-    box-shadow: 2px 2px 2px rgb(49, 49, 49);
+    color: rgb(250, 250, 252);
+    box-shadow: 4px 4px 4px rgb(247, 246, 246);
 }
