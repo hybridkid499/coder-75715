@@ -20,9 +20,19 @@
 
 .section--arma{
     display: flex;
-    column-gap: 60px;
+    flex-wrap: wrap;
+    column-gap: 20px;
     justify-content: center;
+    margin: 30px auto;
 }
+.table {
+  width: 100%;  // En móvil que ocupe todo el ancho del contenedor
+  max-width: 500px;  // Para no crecer demasiado en pantallas grandes
+  overflow-x: auto;  // Que se pueda scrollear horizontalmente si es necesario
+  table-layout: auto;
+  word-break: break-word;
+}
+
 .carrusel-wrapper{
     width: 100%;
     max-width: 500px;
@@ -35,5 +45,9 @@
 }
 
 .table{
-    width: 50%;
+    width: 100%;
+ 
+}
+.section--arma{
+    column-gap: 60px;
 }

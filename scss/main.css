@@ -231,9 +231,19 @@ h3 {
 
 .section--arma {
   display: flex;
-  -moz-column-gap: 60px;
-       column-gap: 60px;
+  flex-wrap: wrap;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
   justify-content: center;
+  margin: 30px auto;
+}
+
+.table {
+  width: 100%;
+  max-width: 500px;
+  overflow-x: auto;
+  table-layout: auto;
+  word-break: break-word;
 }
 
 .carrusel-wrapper {
@@ -247,5 +257,10 @@ h3 {
   }
 }
 .table {
-  width: 50%;
+  width: 100%;
+}
+
+.section--arma {
+  -moz-column-gap: 60px;
+       column-gap: 60px;
 }/*# sourceMappingURL=main.css.map */
